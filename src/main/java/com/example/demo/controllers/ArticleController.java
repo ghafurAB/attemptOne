@@ -17,7 +17,7 @@ public class ArticleController {
     @GetMapping("/home")
 
     public String homepage(){
-        return "Welcome to main backend page here";
+        return "Welcome back to the main backend page here";
     }
 
 }
