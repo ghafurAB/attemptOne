@@ -1,6 +1,14 @@
 package com.example.demo.entities;
+import javax.persistence.*;
 
+@Entity
+@Table(name="articles")
 public class Article {
+    // Id is the primary key here
+    @Id
+    // auto incrementing the id by GenerationType.IDENTITY
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
     private long isbn_number;
     private String title;
     private String author;
@@ -10,6 +18,14 @@ public class Article {
     private String detail;
 
     public Article() {
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public long getIsbn_number() {
