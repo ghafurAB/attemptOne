@@ -9,7 +9,7 @@ public class Article {
     // auto incrementing the id by GenerationType.IDENTITY
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private long isbn_number;
+    private long isbnNumber;
     private String title;
     private String author;
     private String email;
@@ -28,12 +28,12 @@ public class Article {
         this.id = id;
     }
 
-    public long getIsbn_number() {
-        return isbn_number;
+    public long getIsbnNumber() {
+        return isbnNumber;
     }
 
-    public void setIsbn_number(long isbn_number) {
-        this.isbn_number = isbn_number;
+    public void setIsbnNumber(long isbnNumber) {
+        this.isbnNumber = isbnNumber;
     }
 
     public String getTitle() {
@@ -87,7 +87,7 @@ public class Article {
     @Override
     public String toString() {
         return "\nArticle{" +
-                "isbn_number=" + isbn_number +
+                "isbn_number=" + isbnNumber +
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 ", email='" + email + '\'' +
