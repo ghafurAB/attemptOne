@@ -51,4 +51,7 @@ public class ArticleService {
             return articleRepo.save( article);
         });
     }
+    public void deleteArticleById(Long id){
+         articleRepo.deleteById(id);
+    }
 }

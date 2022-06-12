@@ -50,5 +50,8 @@ public class ArticleController {
     public Article save(@RequestBody Article article) {
         return articleService.save(article);
     }
-
+    @DeleteMapping("/article/{id}")
+    public void deleteArticleById(@PathVariable Long id){
+         articleService.deleteArticleById(id);
+    }
 }
