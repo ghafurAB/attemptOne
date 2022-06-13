@@ -6,7 +6,7 @@ import '../css/create.css';
 const Create = () => {
     const history = useHistory()
 
-    const  [isbn, setIsbn ] = useState("")
+    const  [isbnNumber, setIsbnNumber ] = useState("")
     const  [subject, setSubject]  = useState("")
     const  [title, setTitle]  = useState("")
     const  [email, setEmail]  = useState("")
@@ -19,7 +19,7 @@ const Create = () => {
     const createArticle = (event) => {
         event.preventDefault()
         const newArticle = {
-            isbn: parseInt(isbn),
+            isbnNumber: parseInt(isbnNumber),
             email: email,
             subject: subject,
             title: title,
@@ -40,7 +40,7 @@ const Create = () => {
     return (
         <div className="create">
             <form onSubmit={createArticle}>
-                <input required placeholder="isbn" value={isbn} type="number" name="isbn" onChange={e => setIsbn(e.target.value)} />
+                <input required placeholder="isbn" value={isbnNumber} type="number" name="isbnNumber" onChange={e => setIsbnNumber(e.target.value)} />
                 <input required placeholder="subject" value={subject} type="text" name="subject" onChange={e => setSubject(e.target.value)} />
                 <input required placeholder="title" value={title} type="text" name="title" onChange={e => setTitle(e.target.value)} />
                 <input required placeholder="author" value={author} type="text" name="author" onChange={e => setAuthor(e.target.value)} />
