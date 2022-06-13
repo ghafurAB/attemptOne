@@ -30,6 +30,7 @@ const Home = () => {
 
 //loopa igenom alla artiklar i listan
         <div className="home">
+            
             {
                 articles.map((article) => (
                     <div class="mainContent" key={article.id}>
