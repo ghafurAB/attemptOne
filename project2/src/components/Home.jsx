@@ -35,7 +35,7 @@ const Home = () => {
                 articles.map((article) => (
                     <div class="mainContent" key={article.id}>
                         <a>id: {article.id}</a>
-                        <a>isbn: {article.isbn}</a>
+                        <a>isbnNumber: {article.isbnNumber}</a>
                         <a>subject: {article.subject}</a>
                         <a>title: {article.title}</a>
                         <a>author: {article.author}</a>

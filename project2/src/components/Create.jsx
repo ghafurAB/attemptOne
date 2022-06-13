@@ -19,7 +19,7 @@ const Create = () => {
     const createArticle = (event) => {
         event.preventDefault()
         const newArticle = {
-            isbnNumber: parseInt(isbn),
+            isbn: parseInt(isbn),
             email: email,
             subject: subject,
             title: title,
